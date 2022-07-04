@@ -1,0 +1,14 @@
+@keyframes changing-radius {
+  0% {
+    border-radius: 63% 37% 27% 73% / 66% 47% 53% 34%;
+  }
+  30% {
+    border-radius: 25% 75% 16% 84% / 79% 21% 79% 21%;
+  }
+  60% {
+    border-radius: 34% 66% 57% 43% / 40% 31% 69% 60%;
+  }
+  100% {
+    border-radius: 63% 37% 27% 73% / 66% 47% 53% 34%;
+  }
+}
