@@ -1,3 +1,7 @@
+#about-img {
+  animation: changing-radius 4s infinite ease;
+}
+
 @keyframes changing-radius {
   0% {
     border-radius: 63% 37% 27% 73% / 66% 47% 53% 34%;

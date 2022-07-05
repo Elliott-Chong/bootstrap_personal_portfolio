@@ -6,6 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./bootstrap.min.css" />
     <title>Elliott Chong</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="index.css" />
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
@@ -14,9 +20,10 @@
     ></script>
   </head>
   <body>
+    <!-- navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">Navbar</a>
+      <div class="container">
+        <a class="navbar-brand text" href="./index.html">Elliott Chong</a>
         <button
           class="navbar-toggler"
           type="button"
@@ -30,59 +37,170 @@
         </button>
 
         <div class="collapse navbar-collapse" id="navbarColor02">
-          <ul class="navbar-nav me-auto">
+          <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <a class="nav-link active" href="#"
+              <a class="nav-link active" href="./index.html"
                 >About
                 <span class="visually-hidden">(current)</span>
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Projects</a>
+              <a class="nav-link" href="./sp.html">SP</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Timeline</a>
+              <a class="nav-link" href="./career.html">Careers</a>
             </li>
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                data-bs-toggle="dropdown"
-                href="#"
-                role="button"
-                aria-haspopup="true"
-                aria-expanded="false"
-                >Dropdown</a
-              >
-              <div class="dropdown-menu">
-                <a class="dropdown-item" href="#">Action</a>
-                <a class="dropdown-item" href="#">Another action</a>
-                <a class="dropdown-item" href="#">Something else here</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">Separated link</a>
-              </div>
+            <li class="nav-item">
+              <a class="nav-link" href="./contact.html">Contact</a>
             </li>
           </ul>
-          <form class="d-flex">
-            <input
-              class="form-control me-sm-2"
-              type="text"
-              placeholder="Search"
-            />
-            <button class="btn btn-secondary my-2 my-sm-0" type="submit">
-              Search
-            </button>
-          </form>
         </div>
       </div>
     </nav>
     <!-- end navbar -->
-    <div class="bg-dark container-fluid row">
-      <h1 class="col-11">I am Elliott Chong</h1>
-      <img
-        src="./images/about.jpeg"
-        alt="about image"
-        class="img-fluid col-1"
-      />
-    </div>
+    <section class="bg-dark p-sm-5 p-3 pb-md-0">
+      <div class="container">
+        <div class="d-sm-flex align-items-center justify-content-between">
+          <div class="text-sm-start text-start text-white">
+            <h1 class="text-white display-4">
+              I am
+              <span class="text-warning">Elliott Chong</span>
+            </h1>
+            <p class="lead">
+              Computer science enthusiast, web designer hobbyist.
+            </p>
+            <div class="d-flex gap-3">
+              <a
+                href="https://instagram.com/elliottchong_"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i class="bi-instagram h3 text-white"></i>
+              </a>
+              <a
+                href="https://github.com/elliott-chong"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i class="bi-github h3 text-white"></i>
+              </a>
+              <a
+                href="https://www.linkedin.com/in/elliott-chong-566a98224/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i class="bi-linkedin h3 text-white"></i> </a
+              ><a
+                href="https://elliottchong.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i class="bi-globe h3 text-white"></i>
+              </a>
+            </div>
+          </div>
+          <img
+            src="./images/undraw_appreciate_it_re_lly4.svg"
+            alt="about image"
+            class="img-fluid w-50 d-none d-sm-block"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-light text-black">
+      <div class="container px-4 px-sm-0 py-5">
+        <div class="row">
+          <div class="col-md-8">
+            <h1>My values</h1>
+            <figure class="my-5">
+              <blockquote class="blockquote">
+                <p class="mb-0">
+                  <i class="bi-blockquote-left"></i>Happiness is a choice, a
+                  repetitive one.
+                </p>
+              </blockquote>
+              <figcaption class="blockquote-footer">
+                <cite title="Source Title">Akilnathan Logeswaran</cite>
+              </figcaption>
+            </figure>
+            <p>
+              I believe that happiness comes from within, within yourself and
+              within the little things in life. We can only ever reach inner
+              peace within when we stop chasing superficial goals in life enjoy
+              the current moment of existence.
+            </p>
+            <figure class="my-5">
+              <blockquote class="blockquote">
+                <p class="mb-0">
+                  <i class="bi-blockquote-left"></i>It is a shame for a man to
+                  grow old without seeing the beauty and strength of which his
+                  body is capable. I desire only to know the truth, and to live
+                  as well as I can. And, to the utmost of my power, I exhort all
+                  other men to do the same.
+                </p>
+              </blockquote>
+              <figcaption class="blockquote-footer">
+                <cite title="Source Title">Socrates</cite>
+              </figcaption>
+            </figure>
+            <p class="mb-5">
+              Our health is our greatest currency, often time we overlook the
+              importance of exercise, sacrificing it for other forms of
+              superficial pleasures. Working out is a big part of life and it
+              brings me immense pleasure and happiness to my life.
+            </p>
+            <table class="table table-dark table-striped">
+              <thead>
+                <tr>
+                  <th>Activity</th>
+                  <th>Description</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Hiking</td>
+                  <td>I get to enjoy fresh air and beautiful scenery.</td>
+                </tr>
+                <tr>
+                  <td>Gym</td>
+                  <td>
+                    It is fun to see myself getting stronger and building
+                    muscles.
+                  </td>
+                </tr>
+                <tr>
+                  <td>Running</td>
+                  <td>
+                    Running is very meditative for me. I get into the flow and
+                    am fully in the moment, experiencing each breath and step
+                    that I take. It is also very good for my cardiovascular
+                    health and pumps my brain with dopamine.
+                  </td>
+                </tr>
+                <tr>
+                  <td>Walks</td>
+                  <td>
+                    I LOVE going on long walks, I often listen to music or
+                    podcasts when I'm walking. Walking gives me a chance to
+                    clear my head and enjoy life as it is. When walking with
+                    friends and family, we get to have long and relaxing
+                    conversations.
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="col-md-4">
+            <img
+              src="./images/about.jpeg"
+              alt="about img"
+              class="img-fluid"
+              id="about-img"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
   </body>
 </html>
