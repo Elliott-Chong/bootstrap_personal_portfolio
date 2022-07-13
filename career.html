@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./bootstrap.min.css" />
+    <title>Elliott Chong</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="index.css" />
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+      defer
+    ></script>
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand text" href="./index.html">Elliott Chong</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarColor02"
+          aria-controls="navbarColor02"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarColor02">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="./index.html"
+                >About
+                <span class="visually-hidden">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./sp.html">SP</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="./career.html">Careers</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- end navbar -->
+
+    <main>
+      <section class="container mt-5 py-5 text-center">
+        <div class="row py-lg-5 mt-5">
+          <div class="col-md-8 col-lg-6 mx-auto">
+            <h1 class="fw-light">Career Prospects</h1>
+            <p class="lead text-muted">
+              Being in Information Technology, it opens a lot of career
+              opportunites for me. Be it building a start up, or joining a tech
+              company, my computing skills will serve me well in the industry.
+            </p>
+            <div class="d-flex justify-content-center mt-3 gap-3">
+              <button class="btn btn-primary">btn 1</button>
+              <button class="btn btn-secondary">btn 2</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="py-5 px-4 px-md-0 bg-dark">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-4 col-md-6 col-sm-12">
+              <div class="card border-primary mb-3">
+                <h3 class="card-header">Computer Science Research</h3>
+                <img
+                  src="./images//pexels-rfstudio-3825582.jpg"
+                  alt="cs research img"
+                  class="img-fluid"
+                />
+                <div class="card-body">
+                  <p class="card-text">
+                    Getting into academia has always been a dream of mine. Being
+                    able to dedicate my time to research about what I'm
+                    passionate about is something that attracts me a lot.
+                  </p>
+                  <button
+                    class="btn btn-primary"
+                    type="button"
+                    data-bs-toggle="modal"
+                    data-bs-target="#cs-modal"
+                  >
+                    Learn more
+                  </button>
+                  <div
+                    class="modal fade"
+                    id="cs-modal"
+                    tabindex="-1"
+                    aria-labelledby="exampleModalLabel"
+                    aria-hidden="true"
+                  >
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalLabel">
+                            Computer Science Research
+                          </h5>
+                          <button
+                            type="button"
+                            class="btn-close"
+                            data-bs-dismiss="modal"
+                            aria-label="Close"
+                          ></button>
+                        </div>
+                        <div class="modal-body">
+                          <h6>Job Requirements:</h6>
+                          <ol class="list-group list-group-numbered">
+                            <li class="list-group-item">
+                              Effective classroom teaching
+                            </li>
+                            <li class="list-group-item">Academic advising</li>
+                            <li class="list-group-item">
+                              Participation in departmental committee work
+                            </li>
+                            <li class="list-group-item">
+                              Development of curriculum
+                            </li>
+                            <li class="list-group-item">
+                              Research and scholary activity
+                            </li>
+                          </ol>
+                        </div>
+                        <div class="modal-footer">
+                          <button
+                            type="button"
+                            class="btn btn-primary"
+                            data-bs-dismiss="modal"
+                          >
+                            Close
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+              <div class="card border-primary mb-3">
+                <h3 class="card-header">Frontend Developer</h3>
+                <img
+                  src="./images/pexels-josh-sorenson-1714208.jpg"
+                  alt="FE img"
+                  class="img-fluid"
+                />
+                <div class="card-body">
+                  <p class="card-text">
+                    Developing frontend interfaces is already my hobby, so why
+                    not make it my career?
+                  </p>
+                  <button
+                    class="btn btn-primary"
+                    type="button"
+                    data-bs-toggle="modal"
+                    data-bs-target="#fe-modal"
+                  >
+                    Learn more
+                  </button>
+                  <div
+                    class="modal fade"
+                    id="fe-modal"
+                    tabindex="-1"
+                    aria-labelledby="exampleModalLabel"
+                    aria-hidden="true"
+                  >
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalLabel">
+                            Frontend Web Development
+                          </h5>
+                          <button
+                            type="button"
+                            class="btn-close"
+                            data-bs-dismiss="modal"
+                            aria-label="Close"
+                          ></button>
+                        </div>
+                        <div class="modal-body">
+                          <h6>Job Requirements:</h6>
+                          <ol class="list-group list-group-numbered">
+                            <li class="list-group-item">
+                              Building reusable code
+                            </li>
+                            <li class="list-group-item">
+                              Optimizing page load times
+                            </li>
+                            <li class="list-group-item">
+                              Develop and maintain user-facing features
+                            </li>
+                            <li class="list-group-item">
+                              Providing good user experience to the application
+                            </li>
+
+                            <li class="list-group-item">
+                              Using a variety of markup languages to create
+                              beautiful web pages
+                            </li>
+                          </ol>
+                        </div>
+                        <div class="modal-footer">
+                          <button
+                            type="button"
+                            class="btn btn-primary"
+                            data-bs-dismiss="modal"
+                          >
+                            Close
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+              <div class="card border-primary mb-3">
+                <h3 class="card-header">Data Engineering</h3>
+                <img
+                  src="./images/pexels-alex-knight-2599244.jpg"
+                  alt="DE research img"
+                  class="img-fluid"
+                />
+                <div class="card-body">
+                  <p class="card-text">
+                    Data engineering is an extremely popular field right now.
+                    With the rise of big data, machine learning and artificial
+                    intelligence, it is no doubt an excellent career choice.
+                  </p>
+                  <button
+                    class="btn btn-primary"
+                    type="button"
+                    data-bs-toggle="modal"
+                    data-bs-target="#de-modal"
+                  >
+                    Learn more
+                  </button>
+                  <div
+                    class="modal fade"
+                    id="de-modal"
+                    tabindex="-1"
+                    aria-labelledby="exampleModalLabel"
+                    aria-hidden="true"
+                  >
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalLabel">
+                            Data Engineering
+                          </h5>
+                          <button
+                            type="button"
+                            class="btn-close"
+                            data-bs-dismiss="modal"
+                            aria-label="Close"
+                          ></button>
+                        </div>
+                        <div class="modal-body">
+                          <h6>Job Requirements:</h6>
+                          <ol class="list-group list-group-numbered">
+                            <li class="list-group-item">
+                              Implement methods to improve data reliability and
+                              quality
+                            </li>
+                            <li class="list-group-item">
+                              Extract useful information from large sets of data
+                            </li>
+                            <li class="list-group-item">
+                              Find trends in data and develop algorithms to help
+                              make raw data useful for enterprises.
+                            </li>
+                            <li class="list-group-item">
+                              Work with machine learning models to predict
+                              future trends based on current data
+                            </li>
+                          </ol>
+                        </div>
+                        <div class="modal-footer">
+                          <button
+                            type="button"
+                            class="btn btn-primary"
+                            data-bs-dismiss="modal"
+                          >
+                            Close
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+              <div class="card border-primary mb-3">
+                <h3 class="card-header">System Administrator</h3>
+                <img
+                  src="./images/sys_admin.png"
+                  alt="DE research img"
+                  class="img-fluid"
+                />
+                <div class="card-body">
+                  <p class="card-text">
+                    The System Administrator manages hardware and software
+                    checks of workstations and servers. He/She ensures all
+                    standards, policies and guidelines are met. He/She reviews
+                    and reports on the amount of time the service is operational
+                    and the system performance. He/She plans and reports review
+                    status. He/She develops troubleshooting solutions for
+                    recovery and system improvement.
+                  </p>
+                  <button
+                    class="btn btn-primary"
+                    type="button"
+                    data-bs-toggle="modal"
+                    data-bs-target="#sa-modal"
+                  >
+                    Learn more
+                  </button>
+                  <div
+                    class="modal fade"
+                    id="sa-modal"
+                    tabindex="-1"
+                    aria-labelledby="exampleModalLabel"
+                    aria-hidden="true"
+                  >
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalLabel">
+                            System Administrator
+                          </h5>
+                          <button
+                            type="button"
+                            class="btn-close"
+                            data-bs-dismiss="modal"
+                            aria-label="Close"
+                          ></button>
+                        </div>
+                        <div class="modal-body">
+                          <h6>Job Requirements:</h6>
+                          <ol class="list-group list-group-numbered">
+                            <li class="list-group-item">
+                              Create a rollback path in the event of failure.
+                            </li>
+                            <li class="list-group-item">
+                              Determine the resources necessary to carry out the
+                              changing development.
+                            </li>
+                            <li class="list-group-item">
+                              Develop a plan for updates to be added to the
+                              system.
+                            </li>
+                            <li class="list-group-item">
+                              Perform the changes required in system software
+                              according to organisation guidelines.
+                            </li>
+                            <li class="list-group-item">
+                              Schedule system change to ensure business
+                              activities run normally.
+                            </li>
+                          </ol>
+                        </div>
+                        <div class="modal-footer">
+                          <button
+                            type="button"
+                            class="btn btn-primary"
+                            data-bs-dismiss="modal"
+                          >
+                            Close
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
