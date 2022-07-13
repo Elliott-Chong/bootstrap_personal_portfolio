@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./bootstrap.min.css" />
+    <title>Elliott Chong</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="index.css" />
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+      defer
+    ></script>
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand text" href="./index.html">Elliott Chong</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarColor02"
+          aria-controls="navbarColor02"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarColor02">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="./index.html"
+                >About
+                <span class="visually-hidden">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./sp.html">SP</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./career.html">Careers</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="./contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- end navbar -->
+    <section class="bg-white p-5">
+      <div class="container pt-5 mt-5">
+        <div class="row py-lg-5 text-center">
+          <div class="col-md-10 col-lg-6 mx-auto">
+            <h1 class="fw-light">Thank you for visiting my website!</h1>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="bg-dark p-5 text-white">
+      <div class="container">
+        <div class="row">
+          <div class="col-8 mx-auto">
+            <form>
+              <div class="row mb-3">
+                <div class="col">
+                  <label for="name" class="form-label">Name</label>
+                  <input
+                    type="email"
+                    require
+                    class="form-control"
+                    id="name"
+                    aria-describedby="emailHelp"
+                  />
+                </div>
+                <div class="col">
+                  <div>
+                    <label for="phone" class="form-label">Phone number</label>
+                    <input
+                      type="tel"
+                      required
+                      pattern="[0-9]{8}"
+                      class="form-control"
+                      id="phone"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">Email address</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  aria-describedby="emailHelp"
+                />
+                <div id="emailHelp" class="form-text">
+                  I'll never share your email with anyone else!
+                </div>
+              </div>
+              <div class="mb-3 row">
+                <div class="col-8">
+                  <label for="range" class="form-label"
+                    >How likely would you recommend this website to a
+                    friend?</label
+                  >
+                  <input type="range" class="form-range" id="range" />
+                </div>
+                <div class="col-4">
+                  <select
+                    class="form-select"
+                    aria-label="Default select example"
+                  >
+                    <option selected>Open this select menu</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                  </select>
+                </div>
+              </div>
+
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
