@@ -18,6 +18,7 @@
       crossorigin="anonymous"
       defer
     ></script>
+    <script src="./javascript/contact.js" defer></script>
   </head>
   <body>
     <!-- navbar -->
@@ -71,19 +72,19 @@
       <div class="container">
         <div class="row">
           <div class="col-8 mx-auto">
-            <form>
+            <form class="needs-validation" novalidate>
               <div class="row mb-3">
-                <div class="col">
+                <div class="col-md-6 col-12 mb-3 md:mb-0">
                   <label for="name" class="form-label">Name</label>
                   <input
-                    type="email"
-                    require
+                    type="text"
+                    required
                     class="form-control"
                     id="name"
                     aria-describedby="emailHelp"
                   />
                 </div>
-                <div class="col">
+                <div class="col-md-6 col-12">
                   <div>
                     <label for="phone" class="form-label">Phone number</label>
                     <input
@@ -100,6 +101,7 @@
                 <label for="email" class="form-label">Email address</label>
                 <input
                   type="email"
+                  required
                   class="form-control"
                   id="email"
                   aria-describedby="emailHelp"
@@ -108,25 +110,40 @@
                   I'll never share your email with anyone else!
                 </div>
               </div>
-              <div class="mb-3 row">
-                <div class="col-8">
+              <div class="mb-3 row align-items-center">
+                <div class="col-md-8 col-12">
                   <label for="range" class="form-label"
                     >How likely would you recommend this website to a
                     friend?</label
                   >
-                  <input type="range" class="form-range" id="range" />
+                  <input type="range" required class="form-range" id="range" />
                 </div>
-                <div class="col-4">
-                  <select
-                    class="form-select"
-                    aria-label="Default select example"
+                <div class="col-md-4 col-12">
+                  <label for="fav" class="form-label"
+                    >Which is your favourite part of the website?</label
                   >
-                    <option selected>Open this select menu</option>
-                    <option value="1">One</option>
-                    <option value="2">Two</option>
-                    <option value="3">Three</option>
+                  <select
+                    required
+                    id="fav"
+                    class="form-select"
+                    aria-label="favourite"
+                  >
+                    <option selected>Favourite part</option>
+                    <option value="me">Me</option>
+                    <option value="design">Design</option>
+                    <option value="Content">Content</option>
                   </select>
                 </div>
+              </div>
+              <div class="form-floating mb-3">
+                <textarea
+                  class="form-control"
+                  placeholder="Leave a comment here"
+                  id="comments"
+                ></textarea>
+                <label class="text-black" for="floatingTextarea"
+                  >Comments</label
+                >
               </div>
 
               <button type="submit" class="btn btn-primary">Submit</button>
