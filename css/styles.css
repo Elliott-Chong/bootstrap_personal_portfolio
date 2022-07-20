@@ -10,3 +10,16 @@ html {
   justify-content: center;
   align-items: center;
 }
+
+
+.anim-left {
+  opacity: 0;
+  transform: translateX(-50px);
+  transition: opacity, transform 500ms ease-in-out;
+}
+
+.anim-right {
+  opacity: 0;
+  transform: translateX(50px);
+  transition: opacity, transform 500ms ease-in-out;
+}

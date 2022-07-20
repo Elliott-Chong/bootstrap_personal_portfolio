@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./bootstrap.min.css" />
     <title>Elliott Chong</title>
+    <link rel="stylesheet" href="./css/index.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
 
     <link
       rel="stylesheet"
@@ -17,6 +19,7 @@
       crossorigin="anonymous"
       defer
     ></script>
+    <script src="./javascript/script.js" defer></script>
   </head>
   <body>
     <!-- navbar -->
@@ -56,6 +59,18 @@
         </div>
       </div>
     </nav>
+    <!-- progress bar -->
+    <div class="progress fixed-top">
+      <div
+        class="progress-bar"
+        role="progressbar"
+        id="progress-bar"
+        style="width: 0%"
+        aria-valuenow="25"
+        aria-valuemin="0"
+        aria-valuemax="100"
+      ></div>
+    </div>
     <!-- end navbar -->
     <section class="bg-dark mt-5 text-white py-5">
       <div class="container px-4 px-sm-0">
@@ -299,5 +314,13 @@
         </div>
       </div>
     </section>
+    <a href="#top" id="return-btn">
+      <img
+        src="./images/up-arrow.png"
+        width="45px"
+        height="45px"
+        alt="return button"
+      />
+    </a>
   </body>
 </html>
