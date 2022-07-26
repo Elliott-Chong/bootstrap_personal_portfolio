@@ -1,0 +1,9 @@
+#contact-hero {
+  background-image: url("../images/maple-1079235_1920.jpg");
+  background-attachment: fixed;
+}
+
+.hero-text {
+  background-color: rgba(255, 166, 0, 0.411);
+  padding: 5rem;
+}

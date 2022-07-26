@@ -1,0 +1,20 @@
+#career-hero {
+  background-image: url("../images/pocket-watch-1637396_1920.jpg");
+  background-attachment: fixed;
+}
+
+.hero-text {
+  padding: 5rem;
+  background: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(20px);
+  --webkit-backdrop-filter: blur(20px);
+  border-radius: 10px;
+  box-shadow: 10px 10px 10px rgb(0, 0, 0);
+  margin: 0rem 2rem;
+
+  /* background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18); */
+}
