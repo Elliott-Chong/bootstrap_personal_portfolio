@@ -11,7 +11,6 @@ html {
   align-items: center;
 }
 
-
 .anim-left {
   opacity: 0;
   transform: translateX(-50px);
@@ -22,4 +21,14 @@ html {
   opacity: 0;
   transform: translateX(50px);
   transition: opacity, transform 500ms ease-in-out;
+}
+
+.nav-btn {
+  transition: all 200ms ease-in-out;
+}
+
+.nav-btn:hover {
+  background-color: white;
+  color: red !important;
+  transform: translateY(-3px);
 }
