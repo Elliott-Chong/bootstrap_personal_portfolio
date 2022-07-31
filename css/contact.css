@@ -4,7 +4,7 @@
 }
 
 .hero-text {
-  padding: 5rem;
+  padding: 2rem;
   background: rgba(255, 166, 0, 0.411);
   backdrop-filter: blur(3px);
   --webkit-backdrop-filter: blur(3px);

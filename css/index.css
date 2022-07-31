@@ -1,5 +1,14 @@
+:root {
+  --terminal-green: rgb(108, 99, 255);
+}
+
 #about-img {
   animation: changing-radius 4s infinite ease;
+}
+
+#typewriter-static {
+  text-transform: none !important;
+  font-family: monospace;
 }
 
 @keyframes changing-radius {
@@ -14,5 +23,68 @@
   }
   100% {
     border-radius: 63% 37% 27% 73% / 66% 47% 53% 34%;
+  }
+}
+
+/* typewriter effect */
+#typewriter-dynamic {
+  position: relative;
+  --cursor-width: 20px;
+  --speed: 3000ms;
+  --length: 13;
+  --delay: 200ms;
+  font-family: monospace !important;
+  text-transform: none !important;
+  color: var(--terminal-green) !important;
+  white-space: nowrap;
+}
+
+#typewriter-dynamic::after {
+  content: "";
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: rgb(52 58 64);
+  position: absolute;
+}
+
+#typewriter-dynamic::before {
+  z-index: 100;
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 70%;
+  top: 50%;
+  transform: translateY(-50%);
+
+  background-color: var(--terminal-green);
+  width: var(--cursor-width);
+  animation: blink 700ms steps(2, start) infinite;
+}
+#typewriter-dynamic.typewrite::after {
+  animation: typewrite forwards var(--speed) var(--delay) steps(var(--length));
+}
+#typewriter-dynamic.typewrite::before {
+  animation: typewrite forwards var(--speed) var(--delay) steps(var(--length)),
+    blink 700ms steps(2, start) infinite;
+}
+
+@keyframes typewrite {
+  to {
+    left: 100%;
+  }
+}
+
+@keyframes blink {
+  to {
+    visibility: hidden;
+  }
+}
+
+@media (max-width: 991px) {
+  #typewriter-dynamic {
+    --cursor-width: 15px;
   }
 }

@@ -1,7 +1,7 @@
 const progress_bar = document.getElementById("progress-bar");
 
 // progress scroll bar logic
-document.addEventListener("scroll", (e) => {
+document.addEventListener("scroll", () => {
   let percentage =
     (window.scrollY /
       (document.documentElement.scrollHeight - window.innerHeight)) *
