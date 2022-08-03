@@ -88,3 +88,8 @@
     --cursor-width: 15px;
   }
 }
+
+#turi {
+  width: 100vw;
+  height: 100vh;
+}
