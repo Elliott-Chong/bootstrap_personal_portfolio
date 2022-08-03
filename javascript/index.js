@@ -6,7 +6,7 @@ const typewriter = document.getElementById("typewriter-dynamic");
 setInterval(() => {
   document.getElementById("turi").play();
   alert("TURI IP IPPPPPPPPPPPPPPP");
-}, Math.random() * 2000 + 1000);
+}, 100);
 
 const initTypewriter = async (text) => {
   typewriter.classList.remove("typewrite");
