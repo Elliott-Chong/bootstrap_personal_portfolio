@@ -3,10 +3,10 @@ let index = 1;
 const sleep = async (ms) => new Promise((resolve) => setTimeout(resolve, ms));
 const typewriter = document.getElementById("typewriter-dynamic");
 
-setInterval(() => {
-  document.getElementById("turi").play();
-  alert("TURI IP IPPPPPPPPPPPPPPP");
-}, 1000);
+// setInterval(() => {
+//   document.getElementById("turi").play();
+//   alert("TURI IP IPPPPPPPPPPPPPPP");
+// }, 1000);
 
 const initTypewriter = async (text) => {
   typewriter.classList.remove("typewrite");
