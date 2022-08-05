@@ -1,5 +1,5 @@
 :root {
-  --terminal-green: rgb(255, 166, 0);
+  --terminal-green: #4784C3;
 }
 
 #about-img {
@@ -61,7 +61,7 @@
 
   background-color: var(--terminal-green);
   width: var(--cursor-width);
-  animation: blink 700ms steps(2, start) infinite;
+  animation: blink 100ms steps(2, start) infinite;
 }
 #typewriter-dynamic.typewrite::after {
   animation: typewrite forwards var(--speed) var(--delay) steps(var(--length));
@@ -77,11 +77,7 @@
   }
 }
 
-@keyframes blink {
-  to {
-    visibility: hidden;
-  }
-}
+
 
 @media (max-width: 991px) {
   #typewriter-dynamic {

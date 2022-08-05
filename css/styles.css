@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
 html {
   scroll-behavior: smooth;
 }
@@ -57,7 +59,7 @@ html {
   box-shadow: 6px 6px 8px rgb(44, 44, 44) ;
   display: flex;
   text-transform: none !important;
-  font-family: monospace;
+  font-family: 'Space Mono', monospace;
   border-radius: 3px;
   border: 2px solid white;
 }
@@ -73,4 +75,19 @@ html {
 .logo:hover > .hidd{
   opacity: 1;
   max-width: 1em;
+}
+
+.typewriter {
+  font-size: 2rem !important;
+  font-weight: bold;
+}
+
+@keyframes blink {
+  to {
+    visibility: hidden;
+  }
+}
+
+.cursor {
+  animation: blink 1000ms steps(2, start) infinite;
 }

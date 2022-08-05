@@ -23,14 +23,6 @@
     ></script>
   </head>
   <body>
-    <!-- turi ip ip -->
-
-    <!-- <audio controls autoplay>
-      <source src="./images/turiipip.mp4" type="audio/mpeg" />
-      Your browser does not support the audio element.
-    </audio> -->
-    <!-- <video src="./images/turiipip.mp4" autoplay > -->
-
     <!-- navbar -->
     <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
       <div class="container pt-3 anim anim-right">
@@ -42,7 +34,6 @@
           <span class="hidd">o</span>
           <span class="hidd">t</span>
           <span class="hidd">t</span>
-          <!-- <span class="hidd">.</span> -->
         </a>
         <button
           class="navbar-toggler"
@@ -81,17 +72,17 @@
         role="progressbar"
         id="progress-bar"
         style="width: 0%"
-        aria-valuenow="25"
-        aria-valuemin="0"
         aria-valuemax="100"
       ></div>
     </div>
     <!-- end navbar -->
 
-    <section class="bg-dark pt-5 mt-5 p-sm-5 p-3 pb-md-0">
+    <section id="main-section" class="bg-dark pt-5 mt-5 p-sm-5 p-3 pb-md-0">
       <div class="container mt-3 pb-md-0 pb-5">
-        <div class="row justify-content-center align-items-center">
-          <div class="col-md-7 col-12 text-sm-start text-start text-white">
+        <div class="row py-5">
+          <div
+            class="col-12 text-sm-start d-flex justify-content-center align-items-start flex-column text-start text-white"
+          >
             <h1 class="text-white display-4 anim anim-left">
               <span id="typewriter-static">I am </span>
               <span id="typewriter-dynamic" class="">Elliott Chong</span>
@@ -129,32 +120,44 @@
               </a>
             </div>
           </div>
-          <img
-            src="./images/undraw_experience_design_re_ca7l.svg"
-            alt="about image"
-            class="img-fluid col-5 d-none d-sm-block"
-          />
         </div>
       </div>
     </section>
 
     <section class="bg-light text-black">
       <div class="container px-4 px-sm-0 py-5">
+        <div class="row g-5">
+          <div class="col-md-5">
+            <img
+              src="./images/about.jpeg"
+              alt="about img"
+              class="img-fluid"
+              id="about-img"
+            />
+          </div>
+          <div
+            class="col-md-7 d-flex flex-column justify-content-center align-items-start"
+          >
+            <span class="text-dark typewriter"
+              >About me.<span class="cursor">|</span></span
+            >
+            <br />
+            <ul>
+              <li>Im cyr</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-dark text-white">
+      <div class="container px-4 px-sm-0 py-5">
         <div class="row">
           <div class="col-md-8">
-            <h1>My values</h1>
+            <h1 class="text-white">My values</h1>
             <figure class="my-5">
               <blockquote class="blockquote">
                 <p class="mb-0">
-                  <!-- <audio
-                    id="turi"
-                    style="display: none"
-                    controls
-                    autoplay="autoplay"
-                  >
-                    <source src="./images/turiipip.mp4" type="audio/mpeg" />
-                    Your browser does not support the audio tag.
-                  </audio> -->
                   <i class="bi-blockquote-left"></i>Happiness is a choice, a
                   repetitive one.
                 </p>
@@ -229,14 +232,6 @@
                 </tr>
               </tbody>
             </table>
-          </div>
-          <div class="col-md-4">
-            <img
-              src="./images/about.jpeg"
-              alt="about img"
-              class="img-fluid"
-              id="about-img"
-            />
           </div>
         </div>
       </div>
