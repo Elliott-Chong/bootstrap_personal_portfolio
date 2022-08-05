@@ -10,6 +10,11 @@
 }
 
 
+.nice-section {
+  background: url('../images/mountain-7343375_1920.jpg');
+  background-repeat: no-repeat;
+}
+
 
 #typewriter-static {
   text-transform: none !important;

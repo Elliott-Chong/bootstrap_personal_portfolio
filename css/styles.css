@@ -68,9 +68,6 @@ html {
   border: 2px solid white;
 }
 
-.nice-box-shadow {
-  box-shadow: 0 15px 50px rgba(0,0,0,0.5);
-}
 
 
 .hidd {
@@ -84,6 +81,11 @@ html {
   opacity: 1;
   max-width: 1em;
 }
+
+.nice-box-shadow {
+  box-shadow: 0 15px 50px rgba(0,0,0,0.5);
+}
+
 
 .typewriter {
   font-size: 2rem !important;

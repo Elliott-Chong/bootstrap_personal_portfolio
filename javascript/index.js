@@ -3,10 +3,12 @@ let index = 1;
 const sleep = async (ms) => new Promise((resolve) => setTimeout(resolve, ms));
 const typewriter = document.getElementById("typewriter-dynamic");
 
-// setInterval(() => {
-//   document.getElementById("turi").play();
-//   alert("TURI IP IPPPPPPPPPPPPPPP");
-// }, 1000);
+const parallax = document.querySelector(".nice-section");
+
+window.addEventListener("scroll", function () {
+  let offset = window.pageYOffset;
+  parallax.style.backgroundPositionY = offset * -0.8 + "px";
+});
 
 const initTypewriter = async (text) => {
   typewriter.classList.remove("typewrite");
