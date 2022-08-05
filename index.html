@@ -125,26 +125,53 @@
     </section>
 
     <section class="bg-light text-black">
-      <div class="container px-4 px-sm-0 py-5">
-        <div class="row g-5">
-          <div class="col-md-5">
-            <img
-              src="./images/about.jpeg"
-              alt="about img"
-              class="img-fluid"
-              id="about-img"
-            />
+      <div class="container d-flex justify-content-center px-md-4 px-sm-0 py-5">
+        <div class="c-card">
+          <div class="img-box animated-img">
+            <img src="./images/card-img.jpg" alt="card image" />
           </div>
-          <div
-            class="col-md-7 d-flex flex-column justify-content-center align-items-start"
-          >
-            <span class="text-dark typewriter"
-              >About me.<span class="cursor">|</span></span
-            >
-            <br />
-            <ul>
-              <li>Im cyr</li>
-            </ul>
+          <div class="content">
+            <div class="details">
+              <h2 class="text-white text-transform-none">
+                Elliott Chong <br /><span class="sp-text"
+                  >Singapore Polytechnic</span
+                >
+              </h2>
+              <div class="data">
+                <h3 class="text-white text-transform-none">
+                  144<br /><span>Followers</span>
+                </h3>
+                <h3 class="text-white text-transform-none">
+                  44<br /><span>Repos</span>
+                </h3>
+              </div>
+              <div
+                class="d-flex justify-content-center gap-3 align-items-center"
+              >
+                <button
+                  class="btn btn-primary d-flex justify-content-center align-items-center"
+                >
+                  <a
+                    href="https://instagram.com/elliottchong_"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <i class="bi-instagram h3 text-white"></i>
+                  </a>
+                </button>
+                <button
+                  class="btn btn-primary d-flex justify-content-center align-items-center"
+                >
+                  <a
+                    href="https://github.com/elliott-chong"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <i class="bi-github h3 text-white"></i>
+                  </a>
+                </button>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -152,9 +179,15 @@
 
     <section class="bg-dark text-white">
       <div class="container px-4 px-sm-0 py-5">
-        <div class="row">
-          <div class="col-md-8">
-            <h1 class="text-white">My values</h1>
+        <div class="row g-5">
+          <div class="col-md-4 align-self-center">
+            <img class="img-fluid animated-img" src="./images/about.jpeg" />
+          </div>
+
+          <div class="col-md-6">
+            <span class="text-white typewriter"
+              >My values.<span class="cursor">|</span></span
+            >
             <figure class="my-5">
               <blockquote class="blockquote">
                 <p class="mb-0">
@@ -192,7 +225,9 @@
               superficial pleasures. Working out is a big part of life and it
               brings me immense pleasure and happiness to my life.
             </p>
-            <table class="table table-dark table-striped">
+          </div>
+          <div class="col-12">
+            <table class="table table-dark nice-box-shadow table-striped">
               <thead>
                 <tr>
                   <th>Activity</th>

@@ -1,10 +1,15 @@
-:root {
-  --terminal-green: #4784C3;
+
+.animated-img {
+  box-shadow: 0 15px 50px rgba(0,0,0,0.5);
+  animation: changing-radius 4s infinite ease;
+  transition: 300ms;
 }
 
-#about-img {
-  animation: changing-radius 4s infinite ease;
+.animated-img:hover {
+  transform: scale(1.1);
 }
+
+
 
 #typewriter-static {
   text-transform: none !important;
@@ -35,7 +40,7 @@
   --delay: 200ms;
   font-family: monospace !important;
   text-transform: none !important;
-  color: var(--terminal-green) !important;
+  color: var(--sp-red) !important;
   white-space: nowrap;
 }
 
@@ -71,6 +76,107 @@
     blink 700ms steps(2, start) infinite;
 }
 
+/* custom card */
+
+
+
+.c-card {
+  position: relative;
+  width: 450px;
+  height: 450px;
+  height: 200px;
+  background: #343A40;
+  border-radius: 3px;
+  box-shadow: 0px 35px 80px rgba(0,0,0,0.4);
+  transition: 0.5s;
+  margin: 10rem 0 3rem 0;
+}
+
+.c-card:hover {
+  height: 450px;
+}
+
+.img-box {
+  position: absolute;
+  left: 50%;
+  top: -100px;
+  transform: translateX(-50%);
+  width: 180px;
+  height: 180px;
+  background-color: white;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 15px 50px rgba(0,0,0,0.5);
+  transition: .5s;
+}
+
+.c-card:hover .img-box {
+  top: -120px;
+  width: 280px;
+  height: 280px;
+}
+
+.img-box img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.c-card .content {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  overflow: hidden;
+}
+
+.c-card .content .details {
+  transform: translateY(168px);
+  padding: 40px ;
+  text-align: center;
+  width: 100%;
+  transition: .5s;
+}
+
+.c-card:hover .content .details {
+  transform: translateY(0);
+}
+
+.c-card .content .details h2 {
+  line-height: 1.2em;
+  font-family: 'Space Mono', monospace;
+}
+
+.sp-text {
+  color: var(--sp-red);  
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.c-card .content .details h2 span{
+  font-size: 0.8em !important;
+}
+
+.c-card .content .details .data{
+  display: flex;
+  justify-content: space-around;
+  margin: 20px 0;
+}
+
+.c-card .content .details .data h3{
+  font-size: 1.25em !important;
+}
+
+.c-card .content .details .data h3 span{
+  font-size: 0.8em !important;
+  opacity: .5;
+}
+
+
 @keyframes typewrite {
   to {
     left: 100%;
@@ -83,9 +189,21 @@
   #typewriter-dynamic {
     --cursor-width: 15px;
   }
+
+  .c-card {
+    height: 450px;
+    width: 90vw;
+  }
+
+  .c-card .content .details{
+    transform: translateY(0);
+  }
+
+  .c-card .img-box {
+    top: -100px;
+    width: 250px;
+    height: 250px;
+  }
 }
 
-#turi {
-  width: 100vw;
-  height: 100vh;
-}
+

@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
+:root {
+  --sp-red:#F6323E
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -64,6 +68,10 @@ html {
   border: 2px solid white;
 }
 
+.nice-box-shadow {
+  box-shadow: 0 15px 50px rgba(0,0,0,0.5);
+}
+
 
 .hidd {
   opacity:0;
@@ -90,4 +98,8 @@ html {
 
 .cursor {
   animation: blink 1000ms steps(2, start) infinite;
+}
+
+.text-transform-none {
+  text-transform: none !important;
 }
