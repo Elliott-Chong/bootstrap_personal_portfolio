@@ -23,24 +23,54 @@ html {
   transition: opacity, transform 500ms ease-in-out;
 }
 
-.nav-btn {
-  transition: all 200ms ease-in-out;
-  padding-inline: 1rem;
-}
 
 @media (min-width: 990px) {
   .nav-btn {
-    border: 2px solid white;
+    padding-inline: 1rem;
+    position: relative;
   }
 
-  .nav-btn:hover {
-    background-image: linear-gradient(
-      45deg,
-      rgb(151, 151, 151),
-      rgb(92, 92, 92)
-    );
-
-    color: white !important;
-    transform: translateY(-3px);
+  
+  .nav-btn::before {
+    transition: transform 200ms ease-in-out;
+    content: '';
+    transform-origin: right;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+    transform: scaleX(0);
+    height: 4px;
+    background-color: white;
   }
+
+  .nav-btn:hover::before {
+    transform: scaleX(1);
+    transform-origin: left;
+  }
+
+ 
+}
+.logo {
+  font-size: 2rem;
+  padding-inline: 1rem;
+  box-shadow: 6px 6px 8px rgb(44, 44, 44) ;
+  display: flex;
+  text-transform: none !important;
+  font-family: monospace;
+  border-radius: 3px;
+  border: 2px solid white;
+}
+
+
+.hidd {
+  opacity:0;
+  max-width: 0;
+  transition: all 400ms ease-in-out;
+}
+
+
+.logo:hover > .hidd{
+  opacity: 1;
+  max-width: 1em;
 }
