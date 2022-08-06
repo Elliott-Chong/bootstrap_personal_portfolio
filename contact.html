@@ -74,71 +74,83 @@
 
     <section class="bg-dark mt-5 py-md-5 py-5 text-white">
       <div class="container px-3 px-md-0 pt-5">
-        <div class="anim anim-left">
-          <h1 class="serif bold display-1">Contact Me</h1>
+        <h1 class="serif bold display-1 anim anim-right">Contact Me</h1>
 
-          <p class="h5 serif my-4">
-            I would love to hear your feedback on my website. <br />Thank you
-            for your time!
-          </p>
-        </div>
-        <div class="row align-items-center anim anim-right g-5">
+        <p class="h5 serif my-4 anim anim-right">
+          I would love to hear your feedback on my website. <br />Thank you for
+          your time!
+        </p>
+        <div class="row align-items-center g-5">
           <div class="col-md-6 col-12">
             <form class="needs-validation">
-              <label for="name" class="form-label"
-                ><span class="text-danger">* </span>Name:</label
-              >
-              <div class="mb-4 input-group">
-                <span class="input-group-text">
-                  <i class="bi bi-person-fill"></i>
-                </span>
-                <input
-                  type="text"
-                  class="form-control"
-                  id="name"
-                  placeholder="e.g John Doe"
-                  required
-                />
+              <div class="anim anim-right">
+                <label for="name" class="form-label"
+                  ><span class="text-danger">* </span>Name:</label
+                >
+                <div class="mb-4 input-group">
+                  <span class="input-group-text">
+                    <i class="bi bi-person-fill"></i>
+                  </span>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="name"
+                    placeholder="e.g John Doe"
+                    required
+                  />
+                </div>
               </div>
 
-              <label for="email" class="form-label"
-                ><span class="text-danger">* </span>Email:</label
-              >
-              <div class="input-group mb-4">
-                <span class="input-group-text">
-                  <i class="bi bi-envelope-fill"></i>
-                </span>
-                <input
-                  type="email"
-                  class="form-control"
-                  id="email"
-                  placeholder="e.g John_Doe@example.com"
-                  required
-                />
-              </div>
-              <label for="date">Date of Visit</label>
-              <div class="input-group mb-4 mt-1">
-                <span class="input-group-text">
-                  <i class="bi bi-calendar-fill"></i>
-                </span>
-                <input name="date" id="date" class="form-control" type="date" />
+              <div class="anim anim-right">
+                <label for="email" class="form-label"
+                  ><span class="text-danger">* </span>Email:</label
+                >
+                <div class="input-group mb-4">
+                  <span class="input-group-text">
+                    <i class="bi bi-envelope-fill"></i>
+                  </span>
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="email"
+                    placeholder="e.g John_Doe@example.com"
+                    required
+                  />
+                </div>
               </div>
 
-              <label for="favourite" class="form-label"
-                ><span class="text-danger">* </span>Which is your favourite
-                page?</label
-              >
-              <div class="input-group mb-4">
-                <span class="input-group-text">
-                  <i class="bi bi-star-fill"></i>
-                </span>
-                <select id="favourite" class="form-select" required>
-                  <option value="aboutme" selected>About Me</option>
-                  <option value="experience">Experience in SP</option>
-                  <option value="career">DIT</option>
-                  <option value="feedback">Feedback</option>
-                  <option value="none">None</option>
-                </select>
+              <div class="anim anim-right">
+                <label for="date">Date of Visit</label>
+                <div class="input-group mb-4 mt-1">
+                  <span class="input-group-text">
+                    <i class="bi bi-calendar-fill"></i>
+                  </span>
+                  <input
+                    name="date"
+                    id="date"
+                    class="form-control"
+                    type="date"
+                  />
+                </div>
+              </div>
+
+              <div class="anim anim-right">
+                <label for="favourite" class="form-label"
+                  ><span class="text-danger">* </span>Which is your favourite
+                  page?</label
+                >
+                <div class="input-group mb-4">
+                  <span class="input-group-text">
+                    <i class="bi bi-star-fill"></i>
+                  </span>
+                  <select id="favourite" class="form-select" required>
+                    <option value="aboutme" selected>About Me</option>
+                    <option value="experience">Experience in SP</option>
+                    <option value="career">DIT</option>
+                    <option value="feedback">Feedback</option>
+                    <option value="none">None</option>
+                  </select>
+                </div>
               </div>
               <!-- 
               <label>Would you refer this website to anyone?</label>
@@ -171,18 +183,20 @@
                 <label class="form-check-label" for="radio3"> Maybe </label>
               </div> -->
 
-              <label for="feedback" class="form-label">Feedback:</label>
-              <div class="input-group">
-                <span class="input-group-text">
-                  <i class="bi bi-box-arrow-in-right"></i>
-                </span>
-                <textarea
-                  id="feedback-textarea"
-                  class="form-control"
-                ></textarea>
+              <div class="anim anim-right">
+                <label for="feedback" class="form-label">Feedback:</label>
+                <div class="input-group">
+                  <span class="input-group-text">
+                    <i class="bi bi-box-arrow-in-right"></i>
+                  </span>
+                  <textarea
+                    id="feedback-textarea"
+                    class="form-control"
+                  ></textarea>
+                </div>
               </div>
 
-              <div class="d-flex mt-4 gap-3">
+              <div class="d-flex anim anim-right mt-4 gap-3">
                 <button
                   type="submit"
                   class="btn btn-secondary btn-outline-primary"
@@ -200,18 +214,22 @@
           </div>
           <div class="col-md-6 col-12">
             <div class="d-flex ps-md-5 flex-column gap-3">
-              <div class="d-flex align-items-start flex-column data">
+              <div
+                class="d-flex anim anim-right align-items-start flex-column data"
+              >
                 <h3 class="serif bold">Visit me</h3>
                 <p class="serif">Dover road 500</p>
               </div>
-              <div class="d-flex align-items-start flex-column data">
+              <div
+                class="d-flex anim anim-right align-items-start flex-column data"
+              >
                 <h3 class="serif bold">Talk to me</h3>
                 <p class="serif">
                   +65 9912629 <br />
                   elliottchong16@gmail.com
                 </p>
               </div>
-              <div class="d-flex gap-3">
+              <div class="d-flex anim anim-right gap-3">
                 <a
                   href="https://instagram.com/elliottchong_"
                   target="_blank"

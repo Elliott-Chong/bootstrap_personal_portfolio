@@ -1,3 +1,5 @@
+const sleep = async (ms) => new Promise((resolve) => setTimeout(resolve, ms));
+
 const progress_bar = document.getElementById("progress-bar");
 const return_btn = document.getElementById("return-btn");
 if (return_btn) {
@@ -14,11 +16,18 @@ document.addEventListener("scroll", () => {
   progress_bar.style.width = percentage + "%";
 });
 
-setTimeout(() => {
-  document.querySelectorAll(".anim").forEach((elt) => {
-    elt.style.transform = "translate(0)";
-    elt.style.opacity = "1";
-  });
+setTimeout(async () => {
+  let allanim = Array.from(document.querySelectorAll(".anim"));
+  for (let i = 0; i < allanim.length; i++) {
+    allanim[i].style.transform = "translate(0)";
+    allanim[i].style.opacity = "1";
+    // check if got contact
+    if (window.location.href.toLowerCase().includes("contact")) {
+      await sleep(70);
+    } else {
+      await sleep(200);
+    }
+  }
 }, 200);
 
 const parallax = document.querySelector(".nice-section");

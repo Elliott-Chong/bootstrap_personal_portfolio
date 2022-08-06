@@ -72,7 +72,7 @@
 
   background-color: var(--terminal-green);
   width: var(--cursor-width);
-  animation: blink 100ms steps(2, start) infinite;
+  animation: blink 1000ms steps(2, start) infinite;
 }
 #typewriter-dynamic.typewrite::after {
   animation: typewrite forwards var(--speed) var(--delay) steps(var(--length));

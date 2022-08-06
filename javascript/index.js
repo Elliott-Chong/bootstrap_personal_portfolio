@@ -1,6 +1,5 @@
 const IDENTITY = ["Student.", "Learner.", "Leader.", "Athlete."];
 let index = 1;
-const sleep = async (ms) => new Promise((resolve) => setTimeout(resolve, ms));
 const typewriter = document.getElementById("typewriter-dynamic");
 
 // typewriter effect
