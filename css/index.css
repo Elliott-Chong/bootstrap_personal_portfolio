@@ -5,7 +5,7 @@
   transition: 300ms;
 }
 
-.animated-img:hover {
+#animated-img:hover {
   transform: scale(1.1);
 }
 
