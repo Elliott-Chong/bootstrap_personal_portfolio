@@ -3,13 +3,7 @@ let index = 1;
 const sleep = async (ms) => new Promise((resolve) => setTimeout(resolve, ms));
 const typewriter = document.getElementById("typewriter-dynamic");
 
-const parallax = document.querySelector(".nice-section");
-
-window.addEventListener("scroll", function () {
-  let offset = window.pageYOffset;
-  parallax.style.backgroundPositionY = offset * -0.8 + "px";
-});
-
+// typewriter effect
 const initTypewriter = async (text) => {
   typewriter.classList.remove("typewrite");
   typewriter.innerText = "";

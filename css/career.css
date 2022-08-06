@@ -1,9 +1,20 @@
-#career-hero {
-  background-image: url("../images/pocket-watch-1637396_1920.jpg");
-  background-attachment: fixed;
+.nice-section {
+  background-image: url("../images/pexels-red-zeppelin-12969306.jpg");
+  height: 100vh;
+  background-size: cover;
 }
 
-.hero-text {
+nav {
+  /* background: linear-gradient( 180deg, var(--dark-blue) , transparent ) !important; */
+  transition: all 300ms ease-in-out;
+}
+
+.nice-section h1, .nice-section p {
+  text-shadow: 5px 5px 40px rgb(122, 122, 122);
+  transform: translateY(-30px);
+}
+
+/* .hero-text {
   padding: 2rem;
   background: rgba(0, 0, 0, 0.4);
   backdrop-filter: blur(3px);
@@ -11,4 +22,4 @@
   border-radius: 10px;
   box-shadow: 10px 10px 20px rgb(0, 0, 0);
   margin: 0rem 2rem;
-}
+} */

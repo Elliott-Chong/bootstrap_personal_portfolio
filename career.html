@@ -10,7 +10,6 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
     />
-    <link rel="stylesheet" href="./css/index.css" />
     <link rel="stylesheet" href="./css/styles.css" />
     <link rel="stylesheet" href="./css/career.css" />
 
@@ -22,14 +21,23 @@
     ></script>
 
     <script src="./javascript/script.js" defer></script>
+    <script src="./javascript/career.js" defer></script>
   </head>
   <body>
     <!-- navbar -->
-    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
-      <div class="container pt-3">
-        <a class="navbar-brand text nav-btn" href="./index.html"
-          >Elliott Chong</a
-        >
+    <nav class="navbar fixed-top navbar-expand-lg">
+      <div class="container pb-3 pt-4 anim anim-right">
+        <a
+          class="navbar-brand logo text"
+          href="javascript:delay('./index.html');"
+          ><span class="big">E</span>
+          <span class="hidd">l</span>
+          <span class="hidd">l</span>
+          <span class="hidd">i</span>
+          <span class="hidd">o</span>
+          <span class="hidd">t</span>
+          <span class="hidd">t</span>
+        </a>
         <button
           class="navbar-toggler"
           type="button"
@@ -45,18 +53,22 @@
         <div class="collapse navbar-collapse" id="navbarColor02">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <a class="nav-link nav-btn" href="./index.html">About</a>
+              <a class="nav-link text-white nav-btn" href="./index.html"
+                >About
+              </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link nav-btn" href="./sp.html">SP</a>
+              <a class="nav-link text-white nav-btn" href="./sp.html">SP</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active nav-btn" href="./career.html"
+              <a class="nav-link text-white nav-btn active" href="./career.html"
                 >Careers</a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link nav-btn" href="./contact.html">Contact</a>
+              <a class="nav-link text-white nav-btn" href="./contact.html"
+                >Contact</a
+              >
             </li>
           </ul>
         </div>
@@ -77,32 +89,26 @@
     </div>
 
     <main>
-      <!-- <section id="career-hero" class="mt-5 py-5 text-center">
-        <div class="container">
-          <div class="row py-lg-5 mt-5">
-            <div class="hero-text col-md-8 col-lg-6 mx-auto">
-              <h1 class="fw-light text-white">Career Prospects</h1>
-              <p class="lead text-white">
-                Being in Information Technology, it opens a lot of career
-                opportunites for me. Be it building a start up, or joining a
-                tech company, my computing skills will serve me well in the
-                industry.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section> -->
-      <section id="career-hero" class="bg-white py-5 px-md-5">
-        <div class="container pt-5 mt-5">
-          <div class="row py-lg-5 text-center">
-            <div class="col-md-10 col-lg-8 mx-auto">
-              <h1 class="fw-light text-white">Career Prospects</h1>
+      <section class="bg-white nice-section py-5 px-md-5">
+        <div class="container h-100 pt-5 mt-5">
+          <div
+            class="row py-lg-5 h-100 justify-content-center align-items-center text-center"
+          >
+            <div
+              class="col-md-10 d-flex flex-column justify-content-center col-lg-8 h-100"
+            >
+              <h1 class="text-white h1 typewriter">
+                Career Prospects.<span class="cursor">|</span>
+              </h1>
               <p class="fw-bold text-white lead hero-text">
                 Being in Information Technology, it opens a lot of career
                 opportunites for me. Be it building a start up, or joining a
                 tech company, my computing skills will serve me well in the
                 industry.
               </p>
+              <div id="scroll-down-container">
+                <div id="scroll-down"></div>
+              </div>
             </div>
           </div>
         </div>
@@ -430,13 +436,10 @@
         </div>
       </section>
     </main>
-    <a href="#top" id="return-btn">
-      <img
-        src="./images/up-arrow.png"
-        width="45px"
-        height="45px"
-        alt="return button"
-      />
-    </a>
+    <div id="return-btn">
+      <div id="progress-value">
+        <i class="bi bi-arrow-up-short"></i>
+      </div>
+    </div>
   </body>
 </html>

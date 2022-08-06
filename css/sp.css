@@ -1,0 +1,17 @@
+.c-caption {
+    background-color: var(--dark-blue);
+    opacity: .5;
+}
+
+.nice-section {
+    background: url('../images/mountains-7319059_1920.jpg');
+    /* background-position: 0 40% !important; */
+    height: 80vh;
+}
+
+@media (min-width: 990px) {
+
+    #carousel-section {
+        height: 80vh !important;
+    }
+}

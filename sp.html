@@ -6,12 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./bootstrap.min.css" />
     <title>Elliott Chong</title>
-    <link rel="stylesheet" href="./css/index.css" />
     <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/sp.css" />
 
     <link
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
     />
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
@@ -24,10 +24,18 @@
   <body>
     <!-- navbar -->
     <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
-      <div class="container pt-3">
-        <a class="navbar-brand nav-btn text" href="./index.html"
-          >Elliott Chong</a
-        >
+      <div class="container pb-3 pt-4 anim anim-right">
+        <a
+          class="navbar-brand logo text"
+          href="javascript:delay('./index.html');"
+          ><span class="big">E</span>
+          <span class="hidd">l</span>
+          <span class="hidd">l</span>
+          <span class="hidd">i</span>
+          <span class="hidd">o</span>
+          <span class="hidd">t</span>
+          <span class="hidd">t</span>
+        </a>
         <button
           class="navbar-toggler"
           type="button"
@@ -43,13 +51,10 @@
         <div class="collapse navbar-collapse" id="navbarColor02">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <a class="nav-link nav-btn" href="./index.html">About</a>
+              <a class="nav-link nav-btn" href="./index.html">About </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link nav-btn active" href="./sp.html"
-                >SP
-                <span class="visually-hidden">(current)</span>
-              </a>
+              <a class="nav-link nav-btn active" href="./sp.html">SP</a>
             </li>
             <li class="nav-item">
               <a class="nav-link nav-btn" href="./career.html">Careers</a>
@@ -74,101 +79,142 @@
       ></div>
     </div>
     <!-- end navbar -->
-    <section class="bg-dark mt-5 text-white py-5">
-      <div class="container px-4 mt-3 px-sm-0">
-        <h1 class="text-white">
-          Life in <span class="text-danger">Singapore Polytechnic</span>
-        </h1>
-        <div
-          id="carouselExampleDark"
-          class="carousel carousel-dark slide"
-          data-bs-ride="carousel"
-        >
-          <div class="carousel-indicators">
-            <button
-              type="button"
-              data-bs-target="#carouselExampleDark"
-              data-bs-slide-to="0"
-              class="active"
-              aria-current="true"
-              aria-label="Slide 1"
-            ></button>
-            <button
-              type="button"
-              data-bs-target="#carouselExampleDark"
-              data-bs-slide-to="1"
-              aria-label="Slide 2"
-            ></button>
-            <button
-              type="button"
-              data-bs-target="#carouselExampleDark"
-              data-bs-slide-to="2"
-              aria-label="Slide 3"
-            ></button>
-          </div>
-          <div class="carousel-inner">
-            <div class="carousel-item active" data-bs-interval="10000">
-              <img
-                src="./images/sp_seniors.jpg"
-                class="d-block w-100"
-                alt="..."
-              />
-              <div class="carousel-caption d-none bg-danger d-md-block">
-                <h5 class="text-white">Mirror wefie with seniors</h5>
-                <p class="text-white">Picture at tech4good hackathon</p>
-              </div>
+    <section id="carousel-section" class="bg-dark mt-5 text-white py-5">
+      <div class="container h-100 px-4 mt-3 px-sm-0">
+        <!-- <span class="h1 sp-text">Singapore Polytechnic</span> -->
+
+        <div class="row g-5 h-100 align-items-center">
+          <div
+            id="sp-carousel"
+            class="carousel anim-left anim nice-box-shadow col-md-6 col-12 carousel-dark slide"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-indicators">
+              <button
+                type="button"
+                data-bs-target="#sp-carousel"
+                data-bs-slide-to="0"
+                class="active"
+                aria-current="true"
+                aria-label="Slide 1"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#sp-carousel"
+                data-bs-slide-to="1"
+                aria-label="Slide 2"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#sp-carousel"
+                data-bs-slide-to="2"
+                aria-label="Slide 3"
+              ></button>
             </div>
-            <div class="carousel-item" data-bs-interval="2000">
-              <img
-                src="./images/sp_friends.jpg"
-                class="d-block w-100"
-                alt="..."
-              />
-              <div class="carousel-caption d-none d-md-block">
-                <div class="carousel-caption d-none bg-danger d-md-block">
-                  <h5 class="text-white">Mirror wefie with friends at T21</h5>
-                  <p class="text-white">Met a lot of nice friends in SP</p>
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="10000">
+                <img
+                  src="./images/jocelyn.jpg"
+                  class="d-block w-100"
+                  alt="..."
+                />
+                <div
+                  class="carousel-caption d-none c-caption bg-opacity-50 d-md-block"
+                >
+                  <h5 class="text-white">Cat Cafe</h5>
+                  <p class="text-white">Went to a cat cafe with new friends</p>
+                </div>
+              </div>
+              <div class="carousel-item" data-bs-interval="2000">
+                <img
+                  src="./images/library.jpg"
+                  class="d-block w-100"
+                  alt="..."
+                />
+                <div class="carousel-caption d-none d-md-block">
+                  <div
+                    class="carousel-caption d-none c-caption bg-opacity-50 d-md-block"
+                  >
+                    <h5 class="text-white">Library study session</h5>
+                    <p class="text-white">
+                      The SP library is our favourite place to study!
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="./images/fav_people.jpg"
+                  class="d-block w-100"
+                  alt="..."
+                />
+                <div class="carousel-caption d-none d-md-block">
+                  <div
+                    class="carousel-caption d-none c-caption bg-opacity-50 d-md-block"
+                  >
+                    <h5 class="text-white">My favourite people</h5>
+                    <p class="text-white">
+                      I met so many wonderful people here!
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
-            <div class="carousel-item">
-              <img src="./images/sp_map.png" class="d-block w-100" alt="..." />
-              <div class="carousel-caption d-none d-md-block">
-                <div class="carousel-caption d-none bg-danger d-md-block">
-                  <h5 class="text-white">SP Campus Map</h5>
-                  <p class="text-white">
-                    SP has a very big campus, I'm always relying on this map to
-                    get around the school
-                  </p>
-                </div>
-              </div>
-            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#sp-carousel"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#sp-carousel"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
           </div>
-          <button
-            class="carousel-control-prev"
-            type="button"
-            data-bs-target="#carouselExampleDark"
-            data-bs-slide="prev"
-          >
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button
-            class="carousel-control-next"
-            type="button"
-            data-bs-target="#carouselExampleDark"
-            data-bs-slide="next"
-          >
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
+          <div class="col-md-6 col-12 anim anim-right">
+            <span class="text-white typewriter"
+              >SP Experience.<span class="cursor">|</span></span
+            >
+            <br />
+            <br />
+            <p>
+              Studying here in Singapore Polytechnic has been one of the best
+              times in my life so far. I have learnt so many new things and
+              gained so much experience here.
+            </p>
+            <br />
+            <p>
+              More importantly, I have met so many people here, forging deep
+              friendships and creating a supportive community of friends around
+              me!
+            </p>
+            <br />
+            <p>
+              I am so fortunate to be able to study here, and I look forward to
+              the rest of my years here!
+            </p>
+          </div>
         </div>
       </div>
     </section>
-    <section class="bg-light text-dark py-5">
-      <div class="container">
-        <h1>Secondary VS Polytechnic</h1>
-        <div class="table-responsive">
+    <section class="bg-light nice-section text-dark py-5">
+      <div class="container d-flex flex-column justify-content-center h-100">
+        <h1 class="text-white">Secondary VS Polytechnic</h1>
+        <div class="table-responsive nice-box-shadow">
           <table
             class="table table-hover table-dark table-striped table-bordered text-center"
           >
@@ -245,7 +291,7 @@
               aria-labelledby="headingOne"
               data-bs-parent="#accordionExample"
             >
-              <div class="accordion-body text-black">
+              <div class="accordion-body text-white">
                 FED gives us the knowledge and skills to develop effective
                 front-end web applications using Hypertext Markup Language
                 (HTML) and Cascading Stylesheets (CSS). We learn to use
@@ -273,7 +319,7 @@
               aria-labelledby="headingTwo"
               data-bs-parent="#accordionExample"
             >
-              <div class="accordion-body text-black">
+              <div class="accordion-body text-white">
                 This module provides us with an understanding of computer
                 networking concepts and hands-on sessions on with operating
                 systems using Command-Line Interfaces. We are taught the use of
@@ -304,7 +350,7 @@
               aria-labelledby="headingThree"
               data-bs-parent="#accordionExample"
             >
-              <div class="accordion-body text-black">
+              <div class="accordion-body text-white">
                 This module equips us with knowledge in mathematics and
                 analytical skills to solve problems related to infocomm
                 technology. Topics include matrices, linear transformation,
@@ -316,13 +362,43 @@
         </div>
       </div>
     </section>
-    <a href="#top" id="return-btn">
-      <img
-        src="./images/up-arrow.png"
-        width="45px"
-        height="45px"
-        alt="return button"
-      />
-    </a>
+    <footer class="bg-dark text-center text-white">
+      <!-- Grid container -->
+      <div
+        class="container d-flex justify-content-center align-items-center gap-3 p-4"
+      >
+        <!-- Section: Social media -->
+        <section class="d-flex justify-content-center align-items-center">
+          <!-- Instagram -->
+          <a
+            class="btn btn-outline-light btn-floating m-1"
+            href="https://www.instagram.com/elliottchong_/"
+            role="button"
+            target="_blank"
+          >
+            <i class="bi bi-instagram"></i>
+          </a>
+
+          <!-- Github -->
+          <a
+            class="btn btn-outline-light btn-floating m-1"
+            href="https://github.com/elliott-chong"
+            role="button"
+            target="_blank"
+          >
+            <i class="bi bi-github"></i>
+          </a>
+        </section>
+        <div class="text-center">
+          <i class="bi bi-c-circle"></i> Elliott Chong | Singapore
+        </div>
+      </div>
+      <!-- Copyright -->
+    </footer>
+    <div id="return-btn">
+      <div id="progress-value">
+        <i class="bi bi-arrow-up-short"></i>
+      </div>
+    </div>
   </body>
 </html>
