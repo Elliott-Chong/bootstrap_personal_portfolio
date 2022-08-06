@@ -72,96 +72,144 @@
     </nav>
     <!-- end navbar -->
 
-    <section id="contact-hero" class="bg-white py-5 px-md-5">
-      <div class="container pt-5 mt-5">
-        <div class="row py-lg-5 text-center">
-          <div class="col-md-10 col-lg-6 mx-auto">
-            <h1 class="fw-bold text-white hero-text">
-              Thank you for visiting my website!
-            </h1>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="bg-dark py-md-5 py-5 text-white">
-      <div class="container">
-        <div class="row">
-          <div class="col-8 mx-auto">
-            <form class="needs-validation" novalidate>
-              <div class="row mb-3">
-                <div class="col-md-6 col-12 mb-3 md:mb-0">
-                  <label for="name" class="form-label">Name</label>
-                  <input
-                    type="text"
-                    required
-                    class="form-control"
-                    id="name"
-                    aria-describedby="emailHelp"
-                  />
-                </div>
-                <div class="col-md-6 col-12">
-                  <div>
-                    <label for="phone" class="form-label">Phone number</label>
+    <section class="bg-dark mt-5 py-md-5 py-5 text-white">
+      <div class="container pt-5">
+        <h1 class="serif bold display-3">Contact Me</h1>
+        <p class="h5 serif my-5">
+          I would love to hear your feedback on my website. <br />Thank you for
+          your time!
+        </p>
+        <div class="row justify-content-center">
+          <div class="col-12">
+            <form class="needs-validation">
+              <div class="row">
+                <div class="col-md-4 col-12">
+                  <label for="name" class="form-label"
+                    ><span class="text-danger">* </span>Name:</label
+                  >
+                  <div class="mb-4 input-group">
+                    <span class="input-group-text">
+                      <i class="bi bi-person-fill"></i>
+                    </span>
                     <input
-                      type="tel"
-                      required
-                      pattern="[0-9]{8}"
+                      type="text"
                       class="form-control"
-                      id="phone"
+                      id="name"
+                      placeholder="e.g John Doe"
+                      required
+                    />
+                  </div>
+                </div>
+
+                <div class="col-md-4 col-12">
+                  <label for="email" class="form-label"
+                    ><span class="text-danger">* </span>Email:</label
+                  >
+                  <div class="input-group">
+                    <span class="input-group-text">
+                      <i class="bi bi-envelope-fill"></i>
+                    </span>
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="email"
+                      placeholder="e.g John_Doe@example.com"
+                      required
+                    />
+                  </div>
+                </div>
+                <div class="col-md-4 col-12">
+                  <label for="date">Date of Visit</label>
+                  <div class="input-group mb-4 mt-1">
+                    <span class="input-group-text">
+                      <i class="bi bi-calendar-fill"></i>
+                    </span>
+                    <input
+                      name="date"
+                      id="date"
+                      class="form-control"
+                      type="date"
                     />
                   </div>
                 </div>
               </div>
-              <div class="mb-3">
-                <label for="email" class="form-label">Email address</label>
-                <input
-                  type="email"
-                  required
-                  class="form-control"
-                  id="email"
-                  aria-describedby="emailHelp"
-                />
-                <div id="emailHelp" class="form-text">
-                  I'll never share your email with anyone else!
-                </div>
-              </div>
-              <div class="mb-3 row align-items-center">
-                <div class="col-md-8 col-12">
-                  <label for="range" class="form-label"
-                    >How likely would you recommend this website to a
-                    friend?</label
-                  >
-                  <input type="range" required class="form-range" id="range" />
-                </div>
-                <div class="col-md-4 col-12">
-                  <label for="fav" class="form-label"
-                    >Which is your favourite part of the website?</label
-                  >
-                  <select
-                    required
-                    id="fav"
-                    class="form-select"
-                    aria-label="favourite"
-                  >
-                    <option selected>Favourite part</option>
-                    <option value="me">Me</option>
-                    <option value="design">Design</option>
-                    <option value="Content">Content</option>
-                  </select>
-                </div>
-              </div>
-              <div class="form-floating mb-3">
-                <textarea
-                  class="form-control"
-                  placeholder="Leave a comment here"
-                  id="comments"
-                ></textarea>
-                <label class="text-black" for="floatingTextarea"
-                  >Comments</label
-                >
+
+              <label for="favourite" class="form-label"
+                ><span class="text-danger">* </span>Which is your favourite
+                page?</label
+              >
+              <div class="input-group mb-4">
+                <span class="input-group-text">
+                  <i class="bi bi-star-fill"></i>
+                </span>
+                <select id="favourite" class="form-select" required>
+                  <option value="aboutme" selected>About Me</option>
+                  <option value="experience">Experience in SP</option>
+                  <option value="career">DIT</option>
+                  <option value="feedback">Feedback</option>
+                  <option value="none">None</option>
+                </select>
               </div>
 
-              <button type="submit" class="btn btn-primary">Submit</button>
+              <label>Would you refer this website to anyone?</label>
+              <div class="form-check radio-btn mt-1">
+                <input
+                  class="custom-control-input form-check-input"
+                  type="radio"
+                  name="flexRadioDefault"
+                  id="radio1"
+                />
+                <label class="form-check-label" for="radio1"> Yes </label>
+              </div>
+              <div class="form-check radio-btn">
+                <input
+                  class="custom-control-input form-check-input"
+                  type="radio"
+                  name="flexRadioDefault"
+                  id="radio2"
+                  checked
+                />
+                <label class="form-check-label" for="radio2"> No </label>
+              </div>
+              <div class="form-check radio-btn">
+                <input
+                  class="custom-control-input form-check-input"
+                  type="radio"
+                  name="flexRadioDefault"
+                  id="radio3"
+                />
+                <label class="form-check-label" for="radio3"> Maybe </label>
+              </div>
+
+              <label for="feedback" class="form-label mt-4">Feedback:</label>
+              <div class="input-group">
+                <span class="input-group-text">
+                  <i class="bi bi-box-arrow-in-right"></i>
+                </span>
+                <textarea
+                  id="feedback-textarea"
+                  class="form-control"
+                ></textarea>
+              </div>
+
+              <div class="row mb-4 mt-5">
+                <div class="col">
+                  <button
+                    type="submit"
+                    class="btn btn-secondary btn-outline-primary"
+                  >
+                    Submit
+                  </button>
+                </div>
+                <div class="col-2">
+                  <button
+                    type="reset"
+                    class="btn btn-secondary btn-outline-primary"
+                  >
+                    Reset
+                  </button>
+                </div>
+              </div>
             </form>
           </div>
         </div>
