@@ -26,6 +26,7 @@ const parallax = document.querySelector(".nice-section");
 // parallex effect
 window.addEventListener("scroll", function () {
   if (!parallax) return;
+  if (window.innerWidth <= 990) return;
   let offset = window.pageYOffset;
   // parallax.style.backgroundPositionY = offset * -0.8 + "px" + "!important";
   parallax.style.setProperty(
