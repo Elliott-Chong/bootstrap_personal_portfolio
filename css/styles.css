@@ -102,14 +102,17 @@ th, td {
   bottom: 3rem;
   right: 50%;
   transform: translateX(-50%);
+  cursor: pointer;
 }
 
 #scroll-down {
   position: relative;
+  cursor: pointer;
 }
 
 #scroll-down::before {
   content: '';
+  cursor: pointer;
   position: absolute;
   height: 14px;
   width: 14px;
@@ -123,6 +126,7 @@ th, td {
 
 #scroll-down::after {
   content: '';
+  cursor: pointer;
   position: absolute;
   height: 14px;
   width: 14px;
