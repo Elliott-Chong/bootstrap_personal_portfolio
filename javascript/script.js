@@ -25,7 +25,7 @@ setTimeout(async () => {
     if (window.location.href.toLowerCase().includes("contact")) {
       await sleep(70);
     } else {
-      await sleep(200);
+      await sleep(150);
     }
   }
 }, 200);
