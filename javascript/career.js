@@ -1,3 +1,5 @@
+// increase contrast of navbar once it goes down to the content section
+
 const nav_elt = document.querySelector("nav");
 const scroll_down_elt = document.querySelector("#scroll-down");
 document.addEventListener("scroll", () => {
